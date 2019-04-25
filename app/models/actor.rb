@@ -10,6 +10,8 @@ class Actor < ActiveRecord::Base
     all_characters = []
     self.characters.each do |c| all_characters << c
     end
+    all_characters
+  end
 
 
 end
