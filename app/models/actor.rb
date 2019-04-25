@@ -8,7 +8,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     all_characters = []
-    self.characters.each do |c| all_characters << c
+    self.characters.each do |c| all_characters << c.name
     end
     all_characters
   end
