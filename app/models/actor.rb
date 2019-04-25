@@ -1,3 +1,5 @@
+require pry
+
 class Actor < ActiveRecord::Base
   has_many :characters
   has_many :shows, through: :characters
@@ -10,6 +12,7 @@ class Actor < ActiveRecord::Base
     all_characters = []
     self.characters.each do |c| all_characters << c.name
     end
+    binding.pry
     all_characters
   end
 
