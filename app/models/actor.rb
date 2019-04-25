@@ -1,4 +1,3 @@
-require 'pry'
 
 class Actor < ActiveRecord::Base
   has_many :characters
@@ -14,6 +13,5 @@ class Actor < ActiveRecord::Base
     end
     all_characters
   end
-binding.pry
 
 end
