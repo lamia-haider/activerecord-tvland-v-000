@@ -4,7 +4,7 @@ describe Character do
 
   it "belongs to an actor" do
     danny_pudi = Actor.create(first_name: "Danny", last_name: "Pudi")
-    abed = Character.create(name:'Abed', actor_id: danny_pudi.id)
+    abed = Character.create(name:'Abed')
     expect(Character.find_by(:name => "Abed").actor).to eq(danny_pudi)
   end
 
