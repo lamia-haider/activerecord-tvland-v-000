@@ -1,4 +1,4 @@
-require pry
+require 'pry'
 
 class Actor < ActiveRecord::Base
   has_many :characters
